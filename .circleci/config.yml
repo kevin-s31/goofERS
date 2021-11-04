@@ -13,5 +13,5 @@ jobs:
             - snyk/scan:
                 fail-on-issues: true
                 monitor-on-build: true
-                token-variable: SNYK_TOKEN='fc05e579-1649-4b31-a5d7-ec72fca11d60'
+                token-variable: SNYK_TOKEN
         workflows: null
