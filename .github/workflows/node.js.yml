@@ -29,3 +29,7 @@ jobs:
     - run: npm install
     - run: npm i -g snyk
     - run: snyk auth ${{ secrets.SNYK_TOKEN }}
+    
+    - name: Snyk test this goof repo
+    - run: snyk test 
+      
