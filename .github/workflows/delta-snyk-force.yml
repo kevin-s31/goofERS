@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: |
+        run: |
           npm i -g snyk-delta
       
       - name: Run snyk-delta
