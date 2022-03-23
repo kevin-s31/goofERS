@@ -10,16 +10,16 @@ jobs:
     
     steps:
       - uses: actions/checkout@master
-
-      - name: Install snyk-delta
-        run: |
-          npm i -g snyk-delta
-
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/setup@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true
 
-      - name: Just run Snyk-Delta pls  
-      - run: snyk test --json --print-deps | snyk-delta
+      - name: Install snyk-delta
+        run: |
+          npm i -g snyk-delta
+      
+      - name: Run snyk-delta
+        run: |
+          snyk test --json --print-deps | snyk-delta
