@@ -22,4 +22,4 @@ jobs:
         continue-on-error: true
 
       - name: Just run Snyk-Delta pls  
-        run: snyk test --json --print-deps | snyk-delta
+      - run: snyk test --json --print-deps | snyk-delta
