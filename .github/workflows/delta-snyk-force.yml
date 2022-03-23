@@ -23,5 +23,4 @@ jobs:
       - name: Run snyk-delta
         run: |
           snyk auth ${{ secrets.SNYK_TOKEN }}
-          snyk test --json --print-deps 
           snyk test --json --print-deps | snyk-delta
