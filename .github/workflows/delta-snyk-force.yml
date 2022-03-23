@@ -22,4 +22,5 @@ jobs:
       
       - name: Run snyk-delta
         run: |
-          snyk test --json --print-deps | snyk-delta -d
+          snyk test --json --print-deps 
+          snyk test --json --print-deps | snyk-delta
