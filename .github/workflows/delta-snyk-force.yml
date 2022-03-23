@@ -22,5 +22,5 @@ jobs:
       
       - name: Run snyk-delta
         run: |
-          $SNYK_TOKEN snyk test --json --print-deps 
+          SNYK_TOKEN snyk test --json --print-deps 
           snyk test --json --print-deps | snyk-delta
