@@ -19,6 +19,6 @@ jobs:
         run: |
           npm i -g snyk-delta
       
-      - name: Run snyk-delta
-        run: |
-          snyk test --json --print-deps | snyk-delta
+#      - name: Run snyk-delta
+#        run: |
+#          snyk test --json --print-deps | snyk-delta
