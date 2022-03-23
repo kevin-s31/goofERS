@@ -3,6 +3,11 @@ on: push
 jobs:
   security:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.x]
+    
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
@@ -12,11 +17,7 @@ jobs:
         continue-on-error: true
 
       - name: Install snyk-delta
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: |
+        run: |
           npm i -g snyk-delta
       
       - name: Run snyk-delta
