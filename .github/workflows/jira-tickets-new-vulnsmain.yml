@@ -1,0 +1,19 @@
+name: snyk-labs action example - Snyk Issues to Github Issues
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    defaults:
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install jira-tickets-new-vulns
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        run: |
+          sudo curl -LO snyk-jira-sync-linux
+          ls -l
+          sudo chmod +x snyk-jira-sync-linux
+          
+        
+
+ 
