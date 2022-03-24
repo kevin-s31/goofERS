@@ -17,6 +17,6 @@ jobs:
           sudo curl -LO 'https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/1.25.0/snyk-jira-sync-linux'
           sudo chmod +x snyk-jira-sync-linux
           ls -l
-          sudo ./snyk-jira-sync-linux --orgID $orgID --token $SNYK_TOKEN --jiraProjectKey $jiraProjectKey --severity $severity --projectID $projectID --debug True
+          sudo ./snyk-jira-sync-linux --orgID $orgID --token $SNYK_TOKEN --jiraProjectKey $jiraProjectKey --severity $severity --projectID $projectID 
 
  
