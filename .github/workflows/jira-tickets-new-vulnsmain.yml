@@ -10,7 +10,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           orgID:  ad0cc2f3-8e9d-44d3-b7fb-8a06733d58b9
           jiraProjectKey: KT
-          projectID: 2c3fbf60-a5e8-4f0d-b8d6-265de9285393
+          projectID: 5fa768f1-3097-42a7-b2d5-0e957d0ad2d4
           severity: critical
         run: |
           sudo curl -LO 'https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/1.25.0/snyk-jira-sync-linux'
