@@ -8,11 +8,12 @@ jobs:
       - name: Install jira-tickets-new-vulns
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          orgID:  ad0cc2f3-8e9d-44d3-b7fb-8a06733d58b9
+          jiraProjectKey: KT
         run: |
           sudo curl -LO 'https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/1.25.0/snyk-jira-sync-linux'
-          ls -l
           sudo chmod +x snyk-jira-sync-linux
           ls -l
-        
+          sudo ./snyk-jira-sync-linux --orgID $orgID --token $SNYK_TOKEN --jiraProjectKey $jiraProjectKey --priorityScoreThreshold 900
 
  
