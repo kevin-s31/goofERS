@@ -1,7 +1,7 @@
 name: snyk-labs action example - Snyk Issues to Github Issues
 on: push
 jobs:
-  security:
+  jira-tickets-new-vulns:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,10 +12,11 @@ jobs:
           jiraProjectKey: KT
           projectID: 5fa768f1-3097-42a7-b2d5-0e957d0ad2d4
           severity: critical
+          
         run: |
           sudo curl -LO 'https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/1.25.0/snyk-jira-sync-linux'
           sudo chmod +x snyk-jira-sync-linux
           ls -l
-          sudo ./snyk-jira-sync-linux --orgID $orgID --token $SNYK_TOKEN --jiraProjectKey $jiraProjectKey --projectID $projectID --severity $severity --debug True
+          sudo ./snyk-jira-sync-linux --orgID $orgID --token $SNYK_TOKEN --jiraProjectKey $jiraProjectKey --severity $severity --debug True
 
  
