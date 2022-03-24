@@ -9,7 +9,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: |
-          sudo curl -LO snyk-jira-sync-linux
+          sudo curl -LO 'https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/1.25.0/snyk-jira-sync-linux'
           ls -l
           sudo chmod +x snyk-jira-sync-linux
           ls -l
