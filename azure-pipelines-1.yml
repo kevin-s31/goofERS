@@ -17,3 +17,6 @@ steps:
     failOnIssues: true
     continueOnError: true
     monitorWhen: 'always'
+
+- script: | 
+    echo "hello"
