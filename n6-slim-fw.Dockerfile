@@ -1,4 +1,4 @@
-FROM node:6.14.1-slim
+FROM nickchase/rss-php-nginx:v1
 
 RUN apt-get update
 RUN apt-get install -y firewalld beep
