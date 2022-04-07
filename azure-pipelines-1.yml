@@ -14,7 +14,7 @@ steps:
   inputs:
     serviceConnectionEndpoint: 'mySnykToken'
     testType: 'app'
-    failOnIssues: true
+    failOnIssues: false
     continueOnError: true
     monitorWhen: 'always'
 
