@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: kevin-s31/snyk/actions/node@master
+        uses: kevin-s31/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          FORCE_COLOR: True
