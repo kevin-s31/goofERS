@@ -1,0 +1,2146 @@
+
+Debug Mode
+
+
+New issues introduced !
+Security Vulnerabilities:
+  1/358: Directory Traversal [High Severity]
+    Via: adm-zip@0.2.1
+    Fixed in: adm-zip 0.5.2
+    Fixable by upgrade:  adm-zip@0.5.2
+
+
+  2/358: Arbitrary File Write via Archive Extraction (Zip Slip) [Critical Severity]
+    Via: adm-zip@0.2.1
+    Fixed in: adm-zip 0.4.11
+    Fixable by upgrade:  adm-zip@0.4.11
+
+
+  3/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs@11.1.0 => string-width@2.1.1 => strip-ansi@4.0.0 => ansi-regex@3.0.0
+    Fixed in: ansi-regex 6.0.1, 5.0.1
+    Fixable by upgrade:  tap@15.0.0=>nyc@15.1.0=>yargs@15.0.2=>string-width@4.2.0=>strip-ansi@6.0.0=>ansi-regex@5.0.1
+
+
+  4/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs@11.1.0 => cliui@4.1.0 => strip-ansi@4.0.0 => ansi-regex@3.0.0
+    Fixed in: ansi-regex 6.0.1, 5.0.1
+    Fixable by upgrade:  tap@15.0.0=>nyc@15.1.0=>yargs@15.0.2=>cliui@6.0.0=>strip-ansi@6.0.0=>ansi-regex@5.0.1
+
+
+  5/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs@11.1.0 => cliui@4.1.0 => string-width@2.1.1 => strip-ansi@4.0.0 => ansi-regex@3.0.0
+    Fixed in: ansi-regex 6.0.1, 5.0.1
+    Fixable by upgrade:  tap@15.0.0=>nyc@15.1.0=>yargs@15.0.2=>cliui@6.0.0=>string-width@4.2.0=>strip-ansi@6.0.0=>ansi-regex@5.0.1
+
+
+  6/358: Arbitrary Code Injection [Medium Severity]
+    Via: ejs@1.0.0
+    Fixed in: ejs 3.1.6
+    Fixable by upgrade:  ejs@3.1.6
+
+
+  7/358: Arbitrary Code Execution [High Severity]
+    Via: ejs@1.0.0
+    Fixed in: ejs 2.5.3
+    Fixable by upgrade:  ejs@2.5.3
+
+
+  8/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: ejs@1.0.0
+    Fixed in: ejs 2.5.5
+    Fixable by upgrade:  ejs@2.5.5
+
+
+  9/358: Denial of Service (DoS) [Medium Severity]
+    Via: ejs@1.0.0
+    Fixed in: ejs 2.5.5
+    Fixable by upgrade:  ejs@2.5.5
+
+
+  10/358: Arbitrary Code Injection [Medium Severity]
+    Via: ejs-locals@1.0.2 => ejs@0.8.8
+    Fixed in: ejs 3.1.6
+
+
+  11/358: Arbitrary Code Execution [High Severity]
+    Via: ejs-locals@1.0.2 => ejs@0.8.8
+    Fixed in: ejs 2.5.3
+
+
+  12/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: ejs-locals@1.0.2 => ejs@0.8.8
+    Fixed in: ejs 2.5.5
+
+
+  13/358: Denial of Service (DoS) [Medium Severity]
+    Via: ejs-locals@1.0.2 => ejs@0.8.8
+    Fixed in: ejs 2.5.5
+
+
+  14/358: Denial of Service (DoS) [High Severity]
+    Via: express-fileupload@0.0.5
+    Fixed in: express-fileupload 1.1.6-alpha.6
+    Fixable by upgrade:  express-fileupload@1.1.6
+
+
+  15/358: Prototype Pollution [High Severity]
+    Via: express-fileupload@0.0.5
+    Fixed in: express-fileupload 1.1.10
+    Fixable by upgrade:  express-fileupload@1.1.10
+
+
+  16/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => glob-parent@2.0.0
+    Fixed in: glob-parent 5.1.2
+    Fixable by upgrade:  dustjs-linkedin@3.0.1=>chokidar@3.5.2=>glob-parent@5.1.2
+
+
+  17/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => anymatch@1.3.2 => micromatch@2.3.11 => parse-glob@3.0.4 => glob-base@0.3.0 => glob-parent@2.0.0
+    Fixed in: glob-parent 5.1.2
+
+
+  18/358: Remote Code Execution (RCE) [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.7.7
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.7.7
+
+
+  19/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.7.7
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.7.7
+
+
+  20/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.0.14, 4.1.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.0.14
+
+
+  21/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 3.0.7, 4.1.2, 4.0.14
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.0.14
+
+
+  22/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.3.0, 3.8.0
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.3.0
+
+
+  23/358: Denial of Service (DoS) [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.4.5
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.4.5
+
+
+  24/358: Arbitrary Code Execution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.5.3, 3.0.8
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.5.3
+
+
+  25/358: Prototype Pollution [Critical Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.5.3, 3.0.8
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.5.3
+
+
+  26/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11
+    Fixed in: handlebars 4.6.0
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.6.0
+
+
+  27/358: Information Exposure [Low Severity]
+    Via: hbs@4.2.0
+    Fixed in: hbs 
+
+
+  28/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => read-pkg-up@1.0.1 => read-pkg@1.1.0 => normalize-package-data@2.4.0 => hosted-git-info@2.6.0
+    Fixed in: hosted-git-info 3.0.8, 2.8.9
+
+
+  29/358: Prototype Pollution [High Severity]
+    Via: npmconf@0.0.24 => ini@1.1.0
+    Fixed in: ini 1.3.6
+    Fixable by upgrade:  npmconf@1.0.1=>ini@1.3.6
+
+
+  30/358: Reverse Tabnabbing [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0
+    Fixed in: istanbul-reports 3.1.3
+    Fixable by upgrade:  tap@15.0.0=>nyc@15.1.0=>istanbul-reports@3.1.3
+
+
+  31/358: Prototype Pollution [Medium Severity]
+    Via: jquery@2.2.4
+    Fixed in: jquery 3.4.0
+    Fixable by upgrade:  jquery@3.4.0
+
+
+  32/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: jquery@2.2.4
+    Fixed in: jquery 3.5.0
+    Fixable by upgrade:  jquery@3.5.0
+
+
+  33/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: jquery@2.2.4
+    Fixed in: jquery 3.5.0
+    Fixable by upgrade:  jquery@3.5.0
+
+
+  34/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: jquery@2.2.4
+    Fixed in: jquery 1.12.2, 2.2.0, 3.0.0
+    Fixable by upgrade:  jquery@3.0.0
+
+
+  35/358: DLL Injection [High Severity]
+    Via: mongoose@4.2.4 => mongodb@2.0.46 => mongodb-core@1.2.19 => kerberos@0.0.24
+    Fixed in: kerberos 1.0.0
+    Fixable by upgrade:  mongoose@4.2.5=>mongodb@2.0.48=>mongodb-core@1.2.21
+
+
+  36/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>kind-of@6.0.3
+
+
+  37/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>kind-of@6.0.3
+
+
+  38/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>kind-of@6.0.3
+
+
+  39/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  40/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  41/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>kind-of@6.0.3
+
+
+  42/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  43/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  44/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  45/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  46/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  47/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  48/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  49/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  50/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  51/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  52/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  53/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  54/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  55/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  56/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  57/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  58/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  59/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  60/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  61/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon-node@2.1.1 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon-node@2.1.1=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  62/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  63/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  64/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  65/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  66/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  67/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  68/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  69/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  70/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  71/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  72/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  73/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon-node@2.1.1 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon-node@2.1.1=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  74/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  75/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  76/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  77/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  78/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  79/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  80/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  81/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon-node@2.1.1 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon-node@2.1.1=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  82/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  83/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  84/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  85/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  86/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  87/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  88/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  89/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  90/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  91/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  92/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon-node@2.1.1 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon-node@2.1.1=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  93/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  94/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  95/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  96/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  97/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => use@3.1.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>use@3.1.0=>kind-of@6.0.3
+
+
+  98/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  99/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  100/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  101/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  102/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon-node@2.1.1 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon-node@2.1.1=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  103/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  104/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  105/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  106/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  107/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  108/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  109/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  110/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  111/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon-node@2.1.1 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon-node@2.1.1=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  112/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  113/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  114/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  115/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  116/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  117/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  118/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  119/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  120/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  121/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  122/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  123/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  124/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  125/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  126/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  127/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  128/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  129/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  130/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => to-regex@3.0.2 => define-property@2.0.2 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>to-regex@3.0.2=>define-property@2.0.2=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  131/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>kind-of@6.0.3
+
+
+  132/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-accessor-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-accessor-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  133/358: Validation Bypass [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => define-property@1.0.0 => is-descriptor@1.0.2 => is-data-descriptor@1.0.0 => kind-of@6.0.2
+    Fixed in: kind-of 6.0.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>define-property@1.0.0=>is-descriptor@1.0.2=>is-data-descriptor@1.0.0=>kind-of@6.0.3
+
+
+  134/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  lodash@4.17.21
+
+
+  135/358: Command Injection [High Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  lodash@4.17.21
+
+
+  136/358: Prototype Pollution [High Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  lodash@4.17.12
+
+
+  137/358: Prototype Pollution [High Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  138/358: Prototype Pollution [High Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  lodash@4.17.17
+
+
+  139/358: Prototype Pollution [High Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  lodash@4.17.11
+
+
+  140/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  lodash@4.17.11
+
+
+  141/358: Prototype Pollution [Medium Severity]
+    Via: lodash@4.17.4
+    Fixed in: lodash 4.17.5
+    Fixable by upgrade:  lodash@4.17.5
+
+
+  142/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  143/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  144/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.12
+
+
+  145/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  146/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.17
+
+
+  147/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  148/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  149/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.21
+
+
+  150/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.21
+
+
+  151/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.12
+
+
+  152/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  153/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.17
+
+
+  154/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.11
+
+
+  155/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>lodash@4.17.11
+
+
+  156/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.21
+
+
+  157/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.21
+
+
+  158/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.12
+
+
+  159/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  160/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.17
+
+
+  161/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.11
+
+
+  162/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>lodash@4.17.11
+
+
+  163/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.21
+
+
+  164/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.21
+
+
+  165/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.12
+
+
+  166/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  167/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.17
+
+
+  168/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.11
+
+
+  169/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>lodash@4.17.11
+
+
+  170/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  171/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  172/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.12
+
+
+  173/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  174/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.17
+
+
+  175/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  176/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-generator@6.26.1 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-generator@6.26.1=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  177/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  178/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  179/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.12
+
+
+  180/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  181/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.17
+
+
+  182/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  183/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  184/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  185/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  186/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.12
+
+
+  187/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  188/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.17
+
+
+  189/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  190/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  191/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.21
+
+
+  192/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.21
+
+
+  193/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.12
+
+
+  194/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  195/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.17
+
+
+  196/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.11
+
+
+  197/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>lodash@4.17.11
+
+
+  198/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  199/358: Command Injection [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.21
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.21
+
+
+  200/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.12
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.12
+
+
+  201/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.20
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.20
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:SNYK-JS-LODASH-567746:0
+
+
+  202/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.17
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.17
+
+
+  203/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  204/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-instrument@1.10.1 => babel-template@6.26.0 => babel-traverse@6.26.0 => babel-types@6.26.0 => lodash@4.17.10
+    Fixed in: lodash 4.17.11
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-instrument@1.10.1=>babel-template@6.26.0=>babel-traverse@6.26.0=>babel-types@6.26.0=>lodash@4.17.11
+
+
+  205/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.6.2
+    Fixable by upgrade:  marked@0.6.2
+
+
+  206/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 4.0.10
+    Fixable by upgrade:  marked@4.0.10
+
+
+  207/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 4.0.10
+    Fixable by upgrade:  marked@4.0.10
+
+
+  208/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.4.0
+    Fixable by upgrade:  marked@0.4.0
+
+
+  209/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 1.1.1
+    Fixable by upgrade:  marked@1.1.1
+
+
+  210/358: Cross-site Scripting (XSS) [High Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.3.6
+    Fixable by upgrade:  marked@0.3.6
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:marked:20150520:0, patch:npm:marked:20150520:1, patch:npm:marked:20150520:2
+
+
+  211/358: Cross-site Scripting (XSS) [High Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.3.7
+    Fixable by upgrade:  marked@0.3.7
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:marked:20170112:0
+
+
+  212/358: Cross-site Scripting (XSS) [High Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.3.9
+    Fixable by upgrade:  marked@0.3.9
+
+
+  213/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.3.9
+    Fixable by upgrade:  marked@0.3.9
+
+
+  214/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.3.9
+    Fixable by upgrade:  marked@0.3.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:marked:20170907:0
+
+
+  215/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: marked@0.3.5
+    Fixed in: marked 0.3.18
+    Fixable by upgrade:  marked@0.3.18
+
+
+  216/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>mkdirp@0.5.2=>minimist@1.2.6
+
+
+  217/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>mkdirp@0.5.2=>minimist@1.2.5
+
+
+  218/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => caching-transform@1.0.1 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+
+
+  219/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => caching-transform@1.0.1 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+
+
+  220/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => find-cache-dir@0.1.1 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>find-cache-dir@0.1.1=>mkdirp@0.5.2=>minimist@1.2.6
+
+
+  221/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => find-cache-dir@0.1.1 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>find-cache-dir@0.1.1=>mkdirp@0.5.2=>minimist@1.2.5
+
+
+  222/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-report@1.1.3 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-report@1.1.3=>mkdirp@0.5.2=>minimist@1.2.6
+
+
+  223/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-report@1.1.3 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-report@1.1.3=>mkdirp@0.5.2=>minimist@1.2.5
+
+
+  224/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-source-maps@1.2.3 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-source-maps@1.2.3=>mkdirp@0.5.2=>minimist@1.2.6
+
+
+  225/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-source-maps@1.2.3 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-source-maps@1.2.3=>mkdirp@0.5.2=>minimist@1.2.5
+
+
+  226/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => spawn-wrap@1.4.2 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>spawn-wrap@1.4.2=>mkdirp@0.5.2=>minimist@1.2.6
+
+
+  227/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => spawn-wrap@1.4.2 => mkdirp@0.5.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>spawn-wrap@1.4.2=>mkdirp@0.5.2=>minimist@1.2.5
+
+
+  228/358: Prototype Pollution [Low Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11 => optimist@0.6.1 => minimist@0.0.8
+    Fixed in: minimist 1.2.6
+
+
+  229/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11 => optimist@0.6.1 => minimist@0.0.8
+    Fixed in: minimist 0.2.1, 1.2.3
+
+
+  230/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  231/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  232/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  233/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  234/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  235/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  236/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  237/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  238/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>nanomatch@1.2.9=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  239/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => mixin-deep@1.3.1
+    Fixed in: mixin-deep 2.0.1, 1.3.2
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>test-exclude@4.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>base@0.11.2=>mixin-deep@1.3.2
+
+
+  240/358: Denial of Service (DoS) [High Severity]
+    Via: mongoose@4.2.4 => mongodb@2.0.46
+    Fixed in: mongodb 3.1.13
+    Fixable by upgrade:  mongoose@5.4.10=>mongodb@3.1.13
+
+
+  241/358: Prototype Pollution [Medium Severity]
+    Via: mongoose@4.2.4
+    Fixed in: mongoose 5.12.2
+    Fixable by upgrade:  mongoose@5.12.2
+
+
+  242/358: Information Exposure [Medium Severity]
+    Via: mongoose@4.2.4
+    Fixed in: mongoose 4.13.21, 5.7.5
+    Fixable by upgrade:  mongoose@4.13.21
+
+
+  243/358: Remote Memory Exposure [Medium Severity]
+    Via: mongoose@4.2.4
+    Fixed in: mongoose 3.8.39, 4.3.6
+    Fixable by upgrade:  mongoose@4.3.6
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:mongoose:20160116:0, patch:npm:mongoose:20160116:1, patch:npm:mongoose:20160116:2, patch:npm:mongoose:20160116:3, patch:npm:mongoose:20160116:4
+
+
+  244/358: Prototype Pollution [Medium Severity]
+    Via: mongoose@4.2.4 => mpath@0.1.1
+    Fixed in: mpath 0.8.4
+    Fixable by upgrade:  mongoose@5.13.9=>mpath@0.8.4
+
+
+  245/358: Prototype Pollution [High Severity]
+    Via: mongoose@4.2.4 => mquery@1.6.3
+    Fixed in: mquery 3.2.3
+    Fixable by upgrade:  mongoose@5.11.7=>mquery@3.2.3
+
+
+  246/358: Prototype Pollution [High Severity]
+    Via: mongoose@4.2.4 => mquery@1.6.3
+    Fixed in: mquery 3.2.5
+    Fixable by upgrade:  mongoose@5.12.3=>mquery@3.2.5
+
+
+  247/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-lib-report@1.1.3 => path-parse@1.0.5
+    Fixed in: path-parse 1.0.7
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-lib-report@1.1.3=>path-parse@1.0.7
+
+
+  248/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  249/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  250/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  251/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  252/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  253/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  254/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  255/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  256/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  257/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  258/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  259/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  260/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  261/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  262/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  263/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  264/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  265/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  266/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  267/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => set-value@2.0.0
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  268/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  269/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  270/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  271/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  272/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  273/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  274/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  275/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  276/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  277/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  278/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  279/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  280/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  281/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  282/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  283/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  284/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  285/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  286/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 4.0.1, 2.0.1
+
+
+  287/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => union-value@1.0.0 => set-value@0.4.3
+    Fixed in: set-value 2.0.1, 3.0.1
+
+
+  288/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: tinymce@4.9.11
+    Fixed in: tinymce 5.6.0
+    Fixable by upgrade:  tinymce@5.6.0
+
+
+  289/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: tinymce@4.9.11
+    Fixed in: tinymce 5.7.1
+    Fixable by upgrade:  tinymce@5.7.1
+
+
+  290/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: tinymce@4.9.11
+    Fixed in: tinymce 5.9.0
+    Fixable by upgrade:  tinymce@5.9.0
+
+
+  291/358: Cross-site Scripting (XSS) [Medium Severity]
+    Via: tinymce@4.9.11
+    Fixed in: tinymce 5.10.0
+    Fixable by upgrade:  tinymce@5.10.0
+
+
+  292/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => istanbul-reports@1.4.0 => handlebars@4.0.11 => uglify-js@2.8.29
+    Fixed in: uglify-js 3.14.3
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>istanbul-reports@1.4.0=>handlebars@4.0.12=>uglify-js@3.14.3
+
+
+  293/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  294/358: Prototype Pollution [High Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  295/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  296/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  297/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  298/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  299/358: Prototype Pollution [High Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  300/358: Prototype Pollution [High Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  301/358: Prototype Pollution [High Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => nanomatch@1.2.13 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  302/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  303/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  304/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  305/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => nanomatch@1.2.9 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  306/358: Prototype Pollution [High Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  307/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => test-exclude@4.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => base@0.11.2 => cache-base@1.0.1 => unset-value@1.0.0
+    Fixed in: unset-value 2.0.1
+
+
+  308/358: Prototype Pollution [High Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs@11.1.0 => y18n@3.2.1
+    Fixed in: y18n 3.2.2, 4.0.1, 5.0.5
+    Fixable by upgrade:  tap@11.1.5=>nyc@11.9.0=>yargs@11.1.0=>y18n@3.2.2
+
+
+  309/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs@11.1.0 => yargs-parser@9.0.2
+    Fixed in: yargs-parser 5.0.1, 13.1.2, 15.0.1, 18.1.1
+    Fixable by upgrade:  tap@12.6.2=>nyc@14.0.0=>yargs@13.2.2=>yargs-parser@13.1.2
+
+
+  310/358: Prototype Pollution [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs-parser@8.1.0
+    Fixed in: yargs-parser 5.0.1, 13.1.2, 15.0.1, 18.1.1
+    Fixable by upgrade:  tap@12.6.2=>nyc@14.0.0=>yargs-parser@13.1.2
+
+
+  311/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => anymatch@1.3.2 => micromatch@2.3.11 => braces@1.8.5
+    Fixed in: braces 2.3.1
+
+
+  312/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  express@4.15.5=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  313/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => finalhandler@0.3.6 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  express@4.15.0=>finalhandler@1.0.6=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  314/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => send@0.12.3 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  express@4.15.5=>send@0.15.6=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  315/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: mongoose@4.2.4 => mquery@1.6.3 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  mongoose@4.11.14=>mquery@2.3.2=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  316/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: tap@11.1.5 => tap-mocha-reporter@3.0.9 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  tap@11.1.5=>tap-mocha-reporter@3.0.9=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  317/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => serve-static@1.9.3 => send@0.12.3 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  express@4.15.5=>serve-static@1.12.6=>send@0.15.6=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  318/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  319/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  320/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  321/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => nanomatch@1.2.13 => snapdragon@0.8.2 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>nanomatch@1.2.13=>snapdragon@0.8.2=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  322/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => debug@2.2.0
+    Fixed in: debug 2.6.9, 3.1.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>debug@2.6.9
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:debug:20170905:0, patch:npm:debug:20170905:1, patch:npm:debug:20170905:2, patch:npm:debug:20170905:3
+
+
+  323/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: express@4.12.4 => fresh@0.2.4
+    Fixed in: fresh 0.5.2
+    Fixable by upgrade:  express@4.15.5=>fresh@0.5.2
+
+
+  324/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: express@4.12.4 => send@0.12.3 => fresh@0.2.4
+    Fixed in: fresh 0.5.2
+    Fixable by upgrade:  express@4.15.5=>send@0.15.6=>fresh@0.5.2
+
+
+  325/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: express@4.12.4 => serve-static@1.9.3 => send@0.12.3 => fresh@0.2.4
+    Fixed in: fresh 0.5.2
+    Fixable by upgrade:  express@4.15.5=>serve-static@1.12.6=>send@0.15.6=>fresh@0.5.2
+
+
+  326/358: Denial of Service (DoS) [Medium Severity]
+    Via: tap@11.1.5 => nyc@11.9.0 => yargs@11.1.0 => os-locale@2.1.0 => mem@1.1.0
+    Fixed in: mem 4.0.0
+    Fixable by upgrade:  tap@12.0.2=>nyc@13.2.0=>yargs@12.0.5=>os-locale@3.0.1=>mem@4.0.0
+
+
+  327/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => send@0.12.3 => mime@1.3.4
+    Fixed in: mime 1.4.1, 2.0.3
+    Fixable by upgrade:  express@4.16.0=>send@0.16.0=>mime@1.4.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:mime:20170907:0
+
+
+  328/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => serve-static@1.9.3 => send@0.12.3 => mime@1.3.4
+    Fixed in: mime 1.4.1, 2.0.3
+    Fixable by upgrade:  express@4.16.0=>serve-static@1.13.0=>send@0.16.0=>mime@1.4.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:mime:20170907:0
+
+
+  329/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: st@0.2.4 => mime@1.2.11
+    Fixed in: mime 1.4.1, 2.0.3
+    Fixable by upgrade:  st@1.2.1=>mime@1.4.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:mime:20170907:0
+
+
+  330/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: moment@2.15.1
+    Fixed in: moment 2.15.2
+    Fixable by upgrade:  moment@2.15.2
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:moment:20161019:0, patch:npm:moment:20161019:1
+
+
+  331/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: moment@2.15.1
+    Fixed in: moment 2.19.3
+    Fixable by upgrade:  moment@2.19.3
+
+
+  332/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: humanize-ms@1.0.1 => ms@0.6.2
+    Fixed in: ms 0.7.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20151024:0, patch:npm:ms:20151024:1, patch:npm:ms:20151024:2, patch:npm:ms:20151024:3, patch:npm:ms:20151024:4, patch:npm:ms:20151024:5
+
+
+  333/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: mongoose@4.2.4 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  mongoose@4.10.2=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  334/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  express@4.15.3=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  335/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => send@0.12.3 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  express@4.15.3=>send@0.15.3=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  336/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => finalhandler@0.3.6 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  express@4.15.0=>finalhandler@1.0.3=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  337/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => send@0.12.3 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  express@4.15.3=>send@0.15.3=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  338/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: mongoose@4.2.4 => mquery@1.6.3 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  mongoose@4.10.2=>mquery@2.3.1=>debug@2.6.8=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  339/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: tap@11.1.5 => tap-mocha-reporter@3.0.9 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  tap@11.1.5=>tap-mocha-reporter@3.0.9=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  340/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => serve-static@1.9.3 => send@0.12.3 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  express@4.15.3=>serve-static@1.12.3=>send@0.15.3=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  341/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: express@4.12.4 => serve-static@1.9.3 => send@0.12.3 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  express@4.15.3=>serve-static@1.12.3=>send@0.15.3=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  342/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => snapdragon@0.8.2 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>snapdragon@0.8.2=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  343/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => braces@2.3.2 => snapdragon@0.8.2 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>braces@2.3.2=>snapdragon@0.8.2=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  344/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => extglob@2.0.4 => snapdragon@0.8.2 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>extglob@2.0.4=>snapdragon@0.8.2=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  345/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => nanomatch@1.2.13 => snapdragon@0.8.2 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>nanomatch@1.2.13=>snapdragon@0.8.2=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  346/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: dustjs-linkedin@3.0.0 => chokidar@1.5.2 => readdirp@2.2.1 => micromatch@3.1.10 => extglob@2.0.4 => expand-brackets@2.1.4 => snapdragon@0.8.2 => debug@2.2.0 => ms@0.7.1
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  dustjs-linkedin@3.0.0=>chokidar@1.5.2=>readdirp@2.2.1=>micromatch@3.1.10=>extglob@2.0.4=>expand-brackets@2.1.4=>snapdragon@0.8.2=>debug@2.6.7=>ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  347/358: Regular Expression Denial of Service (ReDoS) [Low Severity]
+    Via: ms@0.7.3
+    Fixed in: ms 2.0.0
+    Fixable by upgrade:  ms@2.0.0
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:ms:20170412:0, patch:npm:ms:20170412:1, patch:npm:ms:20170412:2
+
+
+  348/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: errorhandler@1.2.0 => accepts@1.1.4 => negotiator@0.4.9
+    Fixed in: negotiator 0.6.1
+    Fixable by upgrade:  errorhandler@1.4.3=>accepts@1.3.3=>negotiator@0.6.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:negotiator:20160616:0, patch:npm:negotiator:20160616:1, patch:npm:negotiator:20160616:2, patch:npm:negotiator:20160616:3
+
+
+  349/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: express@4.12.4 => accepts@1.2.13 => negotiator@0.5.3
+    Fixed in: negotiator 0.6.1
+    Fixable by upgrade:  express@4.14.0=>accepts@1.3.3=>negotiator@0.6.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:negotiator:20160616:0, patch:npm:negotiator:20160616:1, patch:npm:negotiator:20160616:2, patch:npm:negotiator:20160616:3
+
+
+  350/358: Regular Expression Denial of Service (ReDoS) [High Severity]
+    Via: st@0.2.4 => negotiator@0.2.8
+    Fixed in: negotiator 0.6.1
+    Fixable by upgrade:  st@1.1.0=>negotiator@0.6.1
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:negotiator:20160616:0, patch:npm:negotiator:20160616:1, patch:npm:negotiator:20160616:2, patch:npm:negotiator:20160616:3
+
+
+  351/358: Uninitialized Memory Exposure [High Severity]
+    Via: npmconf@0.0.24
+    Fixed in: npmconf 2.1.3
+    Fixable by upgrade:  npmconf@2.1.3
+
+
+  352/358: Denial of Service (DoS) [High Severity]
+    Via: body-parser@1.0.0 => qs@0.6.6
+    Fixed in: qs 1.0.0
+    Fixable by upgrade:  body-parser@1.6.0=>qs@1.0.2
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:qs:20140806:1, patch:npm:qs:20140806:0
+
+
+  353/358: Denial of Service (DoS) [Medium Severity]
+    Via: body-parser@1.0.0 => qs@0.6.6
+    Fixed in: qs 1.0.0
+    Fixable by upgrade:  body-parser@1.6.0=>qs@1.0.2
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:qs:20140806-1:0, patch:npm:qs:20140806-1:1
+
+
+  354/358: Prototype Override Protection Bypass [High Severity]
+    Via: body-parser@1.0.0 => qs@0.6.6
+    Fixed in: qs 6.0.4, 6.1.2, 6.2.3, 6.3.2
+    Fixable by upgrade:  body-parser@1.17.1=>qs@6.4.0
+
+
+  355/358: Prototype Override Protection Bypass [High Severity]
+    Via: express@4.12.4 => qs@2.4.2
+    Fixed in: qs 6.0.4, 6.1.2, 6.2.3, 6.3.2
+    Fixable by upgrade:  express@4.15.2=>qs@6.4.0
+
+
+  356/358: Regular Expression Denial of Service (ReDoS) [Medium Severity]
+    Via: npmconf@0.0.24 => semver@1.1.4
+    Fixed in: semver 4.3.2
+    Fixable by upgrade:  npmconf@2.0.9=>semver@4.3.2
+
+
+  357/358: Directory Traversal [Medium Severity]
+    Via: st@0.2.4
+    Fixed in: st 0.2.5
+    Fixable by upgrade:  st@0.2.5
+    Fixable by patch (​https://support.snyk.io/hc/en-us/articles/360003891078-Snyk-patches-to-fix​) :  patch:npm:st:20140206:0
+
+
+  358/358: Open Redirect [Medium Severity]
+    Via: st@0.2.4
+    Fixed in: st 1.2.2
+    Fixable by upgrade:  st@1.2.2
+
+
+
+New issues introduced !
+License Issues:
+  1/2: LGPL-2.1 license [Medium Severity]
+    Via: tinymce@4.9.11 
+
+  2/2: GPL-2.0 license [High Severity]
+    Via:  
+
