@@ -4,10 +4,8 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-         ref: add_vulns
-    - uses: kevin-s31/actions/setup@master
+    - uses: actions/checkout@master
+    - uses: kevin-s31/actions/setup@new_branch
     - uses: actions/setup-go@v1
       with:
         go-version: "1.13"
