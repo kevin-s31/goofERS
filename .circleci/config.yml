@@ -9,5 +9,5 @@ jobs:
       - checkout
       - snyk/scan:
           token-variable: SNYK_TOKEN
-          additional-arguments: "code"
+          additional-arguments: "--code"
 workflows: null
