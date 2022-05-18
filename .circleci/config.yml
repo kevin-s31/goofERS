@@ -9,5 +9,6 @@ jobs:
       - checkout
       - run: npm install -q
       - snyk/scan
+        additional-arguments: 'code'
 workflows: null
  
