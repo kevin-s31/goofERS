@@ -8,5 +8,6 @@ jobs:
     steps:
       - checkout
       - snyk/scan:
+          token-variable: SNYK_TOKEN
           additional-arguments: "code"
 workflows: null
