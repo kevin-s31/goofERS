@@ -17,7 +17,7 @@ steps:
     failOnIssues: false
     #continueOnError: true
     #monitorWhen: 'always'
-    additionalArguments: '--version'
+    additionalArguments: 'version'
 
 - script: | 
     echo "hello"
