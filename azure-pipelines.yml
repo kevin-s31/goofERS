@@ -13,11 +13,11 @@ steps:
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'SNYK'
-    testType: 'app'
+    #testType: 'app'
     #failOnIssues: false
     #continueOnError: true
     #monitorWhen: 'always'
-    additionalArguments: '--version'
+    #additionalArguments: '--version'
 
 - script: | 
     echo "hello"
