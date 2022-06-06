@@ -14,10 +14,10 @@ steps:
   inputs:
     serviceConnectionEndpoint: 'SNYK'
     #testType: 'app'
-    #failOnIssues: false
+    failOnIssues: false
     #continueOnError: true
     #monitorWhen: 'always'
-    #additionalArguments: '--version'
+    additionalArguments: '--version'
 
 - script: | 
     echo "hello"
