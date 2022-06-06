@@ -15,9 +15,9 @@ steps:
     serviceConnectionEndpoint: 'mySnykToken'
     testType: 'app'
     failOnIssues: false
-    continueOnError: true
-    monitorWhen: 'always'
-    #additionalArguments: '--version'
+    #continueOnError: true
+    #monitorWhen: 'always'
+    additionalArguments: '--version'
 
 - script: | 
     echo "hello"
