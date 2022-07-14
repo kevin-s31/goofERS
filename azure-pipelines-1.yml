@@ -16,7 +16,7 @@ steps:
     testType: 'app'
     failOnIssues: false
     #continueOnError: true
-    #monitorWhen: 'always'
+    monitorWhen: 'always'
     #additionalArguments: '--version'
 
 - script: | 
