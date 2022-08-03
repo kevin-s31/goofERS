@@ -6,8 +6,8 @@ body:
   - type: checkboxes
     id: new-bug
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      label: Is there an existing feature request for this?
+      description: Please search to see if a relevant feature request already exists.
       options:
       - label: I have searched the existing issues
         required: true
