@@ -9,7 +9,7 @@ body:
       label: Is there an existing feature request for this?
       description: Please search to see if a relevant feature request already exists.
       options:
-      - label: I have searched the existing issues
+      - label: I have searched the existing feature requests
         required: true
 
   - type: textarea
