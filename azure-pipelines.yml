@@ -12,7 +12,7 @@ pool:
 steps:
 - task: SnykSecurityScan@1
   inputs:
-    serviceConnectionEndpoint: 'SNYK'
+    serviceConnectionEndpoint: 'mySnykToken'
     #testType: 'app'
     failOnIssues: false
     #continueOnError: true
