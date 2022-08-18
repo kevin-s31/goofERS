@@ -17,8 +17,9 @@ steps:
     failOnIssues: false
     #continueOnError: true
     #monitorWhen: 'always'
-    additionalArguments: '--version --json'
+    additionalArguments: 'code monitor'
 
 - script: | 
     echo "hello"
     snyk -v
+    
