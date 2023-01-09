@@ -4,22 +4,37 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  - master
 
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: SnykSecurityScan@1
-  inputs:
-    serviceConnectionEndpoint: 'mySnykToken'
-    #testType: 'app'
-    failOnIssues: false
-    #continueOnError: true
-    #monitorWhen: 'always'
-    additionalArguments: '--code'
 
-- script: | 
-    echo "hello"
-    snyk -v
-    
+steps:
+  - checkout: self
+
+  - script: |
+      npm install -g snyk snyk-to-html
+      npm install
+      npm fund
+  - task: SnykSecurityScan@1
+    continueOnError: true
+    inputs:
+      serviceConnectionEndpoint: 'SNYK_TOKEN'
+      testType: 'app'
+      # This configures a pure local scan - results are not uploaded. 
+      # If this is desired, set `monitorWhen` to 'always' and remove the `--sarif-file-output` argument.
+
+      # If you need to connect to the EU Instance, add --API=https://app.eu.snyk.io/api to additionalArguments
+      
+      monitorWhen: 'never'
+      additionalArguments: '--all-projects --debug'
+
+
+
+#  - task: PublishBuildArtifacts@1
+#    displayName: "Publish Artifact: CodeAnalysisLogs"
+#    condition: succeededOrFailed()
+#    inputs:
+#      PathtoPublish: $(Build.SourcesDirectory)/CodeAnalysisLogs
+#      ArtifactName: CodeAnalysisLogs
