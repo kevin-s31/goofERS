@@ -37,7 +37,7 @@ steps:
     displayName: 'Publish HTML Report'
     inputs:
       reportDir: '/home/vsts/work/1/s/results.html'
-      tabName: 'Snyk Report'
+      tabName: 'Put Whatever Tab name here'
 
 #  - task: PublishBuildArtifacts@1
 #    displayName: "Publish Artifact: CodeAnalysisLogs"
