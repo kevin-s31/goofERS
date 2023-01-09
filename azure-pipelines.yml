@@ -33,7 +33,7 @@ steps:
      pwd
      ls -l
 
-  - task: PublishHtmlReport@1
+  - task: JakubRumpca.azure-pipelines-html-report.PublishHtmlReport.PublishHtmlReport
     displayName: 'Publish HTML Report'
     inputs:
       reportDir: '$(ResultsPath)/reportName.html'
