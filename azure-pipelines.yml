@@ -28,7 +28,7 @@ steps:
       # If you need to connect to the EU Instance, add --API=https://app.eu.snyk.io/api to additionalArguments
       
       monitorWhen: 'never'
-      additionalArguments: '--all-projects --debug'
+      additionalArguments: '--code --all-projects --debug'
   - script: | 
      pwd
      ls -l
