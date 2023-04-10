@@ -17,22 +17,27 @@ steps:
       npm install -g snyk snyk-to-html
       npm install
       npm fund
-  - task: SnykSecurityScan@1
-    continueOnError: true
-    inputs:
-      serviceConnectionEndpoint: 'SNYK_TOKEN'
-      testType: 'app'
+      npm install -g snyk
+  
+  - script: |
+      snyk monitor 
+
+#  - task: SnykSecurityScan@1
+#    continueOnError: true
+#    inputs:
+#      serviceConnectionEndpoint: 'SNYK_TOKEN'
+      #testType: 'app'
       # This configures a pure local scan - results are not uploaded. 
       # If this is desired, set `monitorWhen` to 'always' and remove the `--sarif-file-output` argument.
 
       # If you need to connect to the EU Instance, add --API=https://app.eu.snyk.io/api to additionalArguments
       
-      monitorWhen: 'never'
-      additionalArguments: 'monitor'
+#      monitorWhen: 'never'
+#      additionalArguments: 'monitor'
       #additionalArguments: '--code --all-projects --debug'
-  - script: | 
-     pwd
-     ls -l
+#  - script: | 
+#     pwd
+#     ls -l
 
 #  - task: PublishHtmlReport@1
 #    displayName: 'Publish HTML Report'
