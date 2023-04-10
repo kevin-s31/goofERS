@@ -21,6 +21,8 @@ steps:
   
   - script: |
       snyk monitor 
+    env:
+      SNYK_TOKEN: $(SNYK_TOKEN)
 
 #  - task: SnykSecurityScan@1
 #    continueOnError: true
