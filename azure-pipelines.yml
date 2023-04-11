@@ -19,10 +19,10 @@ steps:
       npm fund
       npm install -g snyk
   
-  - script: |
-      snyk monitor 
-    env:
-      SNYK_TOKEN: $(SNYK_TOKEN)
+#  - script: |
+#      snyk monitor 
+#    env:
+#      SNYK_TOKEN: $(SNYK_TOKEN)
 
   - task: SnykSecurityScan@1
     continueOnError: true
