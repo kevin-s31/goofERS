@@ -27,7 +27,7 @@ steps:
     continueOnError: true
     inputs:
       serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --code || true
+      additionalArguments: --code 
       
   - task: SnykSecurityScan@1
     continueOnError: true
