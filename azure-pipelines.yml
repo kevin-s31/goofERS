@@ -23,7 +23,12 @@ steps:
 #      snyk monitor 
 #    env:
 #      SNYK_TOKEN: $(SNYK_TOKEN)
-
+  - task: SnykSecurityScan@1
+    continueOnError: true
+    inputs:
+      serviceConnectionEndpoint: 'SNYK_TOKEN'
+      additionalArguments: --code || true
+      
   - task: SnykSecurityScan@1
     continueOnError: true
     inputs:
