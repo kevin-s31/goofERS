@@ -24,13 +24,14 @@ steps:
     continueOnError: true
     inputs:
       serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --code 
+      additionalArguments: --code --all-projects
       
   - task: SnykSecurityScan@1
     displayName: Snyk Open Source test
     continueOnError: true
     inputs:
       serviceConnectionEndpoint: 'SNYK_TOKEN'
+      additionalArguments: --all-projects
 
 
 
