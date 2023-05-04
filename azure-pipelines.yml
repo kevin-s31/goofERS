@@ -37,6 +37,15 @@ steps:
     inputs:
       serviceConnectionEndpoint: 'SNYK_TOKEN'
       additionalArguments: --iac
+
+
+
+
+
+
+
+
+
       #testType: 'app'
       # This configures a pure local scan - results are not uploaded. 
       # If this is desired, set `monitorWhen` to 'always' and remove the `--sarif-file-output` argument.
