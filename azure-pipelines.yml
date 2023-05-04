@@ -13,22 +13,25 @@ pool:
 steps:
   - checkout: self
 
-  - script: |
-      npm install -g snyk snyk-to-html
-      npm install
-      npm fund
-      npm install -g snyk
-  
 #  - script: |
-#      snyk monitor 
-#    env:
-#      SNYK_TOKEN: $(SNYK_TOKEN)
+#      npm install -g snyk snyk-to-html
+#      npm install
+#      npm fund
+#      npm install -g snyk
+  
   - task: SnykSecurityScan@1
     continueOnError: true
     inputs:
       serviceConnectionEndpoint: 'SNYK_TOKEN'
       additionalArguments: --code 
       
+  - task: SnykSecurityScan@1
+    continueOnError: true
+    inputs:
+      serviceConnectionEndpoint: 'SNYK_TOKEN'
+      #additionalArguments: --code 
+
+
   - task: SnykSecurityScan@1
     continueOnError: true
     inputs:
@@ -60,17 +63,17 @@ steps:
 #      PathtoPublish: $(Build.SourcesDirectory)/CodeAnalysisLogs
 #      ArtifactName: CodeAnalysisLogs
 
-  - script: | 
-      latest_version=$(curl -Is "https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/latest" | grep "^location" | sed s#.*tag/##g | tr -d "\r")
-      echo "Latest Jira-tickets-new-vulns Version: ${latest_version}"
-      curl -LO "https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/${latest_version}/snyk-jira-sync-linux"
-      chmod +x snyk-jira-sync-linux
-      ls -la 
-    continueOnError: true
-    displayName: "Download Jira-tickets-binary"
+#  - script: | 
+#      latest_version=$(curl -Is "https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/latest" | grep "^location" | sed s#.*tag/##g | tr -d "\r")
+#      echo "Latest Jira-tickets-new-vulns Version: ${latest_version}"
+#      curl -LO "https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/${latest_version}/snyk-jira-sync-linux"
+#      chmod +x snyk-jira-sync-linux
+#      ls -la 
+#    continueOnError: true
+#    displayName: "Download Jira-tickets-binary"
 
     
-  - script: | 
-      ./snyk-jira-sync-linux --orgID=ad0cc2f3-8e9d-44d3-b7fb-8a06733d58b9 --token=$SNYK_TOKEN --jiraProjectKey=KAT --projectID=b520e067-6c2a-46ab-9841-79dfb0e5896e --jiraTicketType=Task --severity=high
-    env: 
-      SNYK_TOKEN: $(SNYK_TOKEN)
+#  - script: | 
+#      ./snyk-jira-sync-linux --orgID=ad0cc2f3-8e9d-44d3-b7fb-8a06733d58b9 --token=$SNYK_TOKEN --jiraProjectKey=KAT --projectID=b520e067-6c2a-46ab-9841-79dfb0e5896e --jiraTicketType=Task --severity=high
+#    env: 
+#      SNYK_TOKEN: $(SNYK_TOKEN)
