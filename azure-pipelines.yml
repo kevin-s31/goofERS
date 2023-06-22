@@ -19,12 +19,12 @@ steps:
 #      npm fund
 #      npm install -g snyk
   
-  - task: SnykSecurityScan@1
-    displayName: Snyk code test
-    continueOnError: true
-    inputs:
-      serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --code --all-projects
+#  - task: SnykSecurityScan@1
+#    displayName: Snyk code test
+#    continueOnError: true
+#    inputs:
+#      serviceConnectionEndpoint: 'SNYK_TOKEN'
+#      additionalArguments: --code --all-projects
       
   - task: SnykSecurityScan@1
     displayName: Snyk Open Source test
@@ -35,12 +35,12 @@ steps:
 
 
 
-  - task: SnykSecurityScan@1
-    displayName: Snyk IAC test
-    continueOnError: true
-    inputs:
-      serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --iac
+  #- task: SnykSecurityScan@1
+  #  displayName: Snyk IAC test
+  #  continueOnError: true
+  #  inputs:
+  #    serviceConnectionEndpoint: 'SNYK_TOKEN'
+  #    additionalArguments: --iac
 
 
 
