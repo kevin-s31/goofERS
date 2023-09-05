@@ -1,8 +1,3 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
   - master
 
@@ -13,80 +8,11 @@ pool:
 steps:
   - checkout: self
 
-#  - script: |
-#      npm install -g snyk snyk-to-html
-#      npm install
-#      npm fund
-#      npm install -g snyk
-  
-  - task: SnykSecurityScan@1
-    displayName: Snyk code test
+  - script: | 
+      latest_version=$(curl -Is "https://github.com/snyk/cli/releases/latest" | grep "^location" | sed s#.*tag/##g | tr -d "\r")
+      echo "Latest Jira-tickets-new-vulns Version: ${latest_version}"
+      curl -LO "https://github.com/snyk/cli/releases/download/${latest_version}/snyk-linux"
+      chmod +x snyk-linux
+      ls -la 
     continueOnError: true
-    inputs:
-      serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --code --all-projects
-      
-  - task: SnykSecurityScan@1
-    displayName: Snyk Open Source test
-    continueOnError: true
-    inputs:
-      serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --all-projects
-
-
-
-  - task: SnykSecurityScan@1
-    displayName: Snyk IAC test
-    continueOnError: true
-    inputs:
-      serviceConnectionEndpoint: 'SNYK_TOKEN'
-      additionalArguments: --iac
-
-
-
-
-
-
-
-
-
-      #testType: 'app'
-      # This configures a pure local scan - results are not uploaded. 
-      # If this is desired, set `monitorWhen` to 'always' and remove the `--sarif-file-output` argument.
-
-      # If you need to connect to the EU Instance, add --API=https://app.eu.snyk.io/api to additionalArguments
-      
-#      monitorWhen: 'never'
-#      additionalArguments: 'monitor'
-      #additionalArguments: '--code --all-projects --debug'
-#  - script: | 
-#     pwd
-#     ls -l
-
-#  - task: PublishHtmlReport@1
-#    displayName: 'Publish HTML Report'
-#    inputs:
-#      reportDir: '/home/vsts/work/1/s/results.html'
-#      tabName: 'Put Whatever Tab name here'
-
-#  - task: PublishBuildArtifacts@1
-#    displayName: "Publish Artifact: CodeAnalysisLogs"
-#    condition: succeededOrFailed()
-#    inputs:
-#      PathtoPublish: $(Build.SourcesDirectory)/CodeAnalysisLogs
-#      ArtifactName: CodeAnalysisLogs
-
-#  - script: | 
-#      latest_version=$(curl -Is "https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/latest" | grep "^location" | sed s#.*tag/##g | tr -d "\r")
-#      echo "Latest Jira-tickets-new-vulns Version: ${latest_version}"
-#      curl -LO "https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases/download/${latest_version}/snyk-jira-sync-linux"
-#      chmod +x snyk-jira-sync-linux
-#      ls -la 
-#    continueOnError: true
-#    displayName: "Download Jira-tickets-binary"
-
-    
-#  - script: | 
-#      ./snyk-jira-sync-linux --orgID=ad0cc2f3-8e9d-44d3-b7fb-8a06733d58b9 --token=$SNYK_TOKEN --jiraProjectKey=KAT --projectID=b520e067-6c2a-46ab-9841-79dfb0e5896e --jiraTicketType=Task --severity=high
-#    env: 
-#      SNYK_TOKEN: $(SNYK_TOKEN)
+    displayName: "Download snyk binary"
