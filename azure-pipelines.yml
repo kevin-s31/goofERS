@@ -17,7 +17,7 @@ steps:
       ls -la 
       snyk test --all-projects 
     continueOnError: true
-    displayName: "Download snyk binary"
+    displayName: "Download snyk binary and run snyk opensource"
   
   #- script: |
   #    snyk test --all-projects 
