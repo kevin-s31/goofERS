@@ -13,6 +13,7 @@ steps:
       echo "Latest Jira-tickets-new-vulns Version: ${latest_version}"
       curl -LO "https://github.com/snyk/cli/releases/download/${latest_version}/snyk-linux"
       chmod +x snyk-linux
+      mv snyk-linux snyk
       ls -la 
     continueOnError: true
     displayName: "Download snyk binary"
