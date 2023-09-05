@@ -19,7 +19,7 @@ steps:
     displayName: "Download snyk binary"
   
   - script: |
-      ./snyk test --all-projects || True
+      ./snyk test --all-projects || true
     #continueOnError: true
     displayName: 'snyk open source'
     
