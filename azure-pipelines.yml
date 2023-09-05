@@ -15,13 +15,14 @@ steps:
       chmod +x snyk-linux
       mv snyk-linux snyk
       ls -la 
+      snyk test --all-projects 
     continueOnError: true
     displayName: "Download snyk binary"
   
-  - script: |
-      snyk test --all-projects 
+  #- script: |
+  #    snyk test --all-projects 
       #RESULT=$?
       #snyk-to-html -o $(Build.ArtifactStagingDirectory)/results-open-source.html < results.json
       #exit $RESULT
-    continueOnError: true
-    displayName: 'snyk open source'
+  #  continueOnError: true
+  #  displayName: 'snyk open source'
