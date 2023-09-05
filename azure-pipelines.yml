@@ -16,3 +16,11 @@ steps:
       ls -la 
     continueOnError: true
     displayName: "Download snyk binary"
+  
+  - script: |
+      snyk test --all-projects 
+      #RESULT=$?
+      #snyk-to-html -o $(Build.ArtifactStagingDirectory)/results-open-source.html < results.json
+      #exit $RESULT
+    continueOnError: true
+    displayName: 'snyk open source'
